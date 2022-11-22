@@ -19,8 +19,7 @@ let users = [];
             let pre = document.querySelector('#msg pre');
             pre.textContent = '\n' + JSON.stringify( users, '\t', 2);
 
-            //saving to localStorage
-           // localStorage.setItem('MyMovieList', JSON.stringify (users)) ;
+           
         }
             document.addEventListener('DOMContentLoaded', ()=>{
             document.getElementById('submit').addEventListener('click', addUser);
