@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<title>Main</title>
+<link rel="stylesheet" href="css/main.css">
+
+<body>
+    <nav class="navbar"></nav>
+    <script src="javascript/nav.js"></script>
+
+    <div class="containt">
+        <h2>Welcome to Contact Management System</h2>
+        <p>&nbsp;&nbsp;In this contact management system you can manage your contact list based on name email and
+            contact
+            number.
+        <p>
+        <p>As like your phone have contact list here you can also add some additional information</p>
+    </div>
+    <div class="contact-table">
+        <table class="list" id="contactList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email Id</th>
+                    <th>contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <div class="container">
+        <hr>
+        <div class="container">
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <h2 style="text-align:center ;">Fill Details</h2>
+                    <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This
+                        field is required.</label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                <div>
+                    <label>Email Id</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label>contact</label>
+                    <input type="text" name="contact" id="contact">
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        <br />
+
+        <script src="javascript/script.js"></script>
+
+    </div>
+</body>
+
+</html>
