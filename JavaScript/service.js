@@ -84,7 +84,7 @@ function loginFun() {
   }
 }
 
-
+//Contact-Details Form
 function saveContactDetails(){
    //Retrieving the data from html file
 
