@@ -1,5 +1,14 @@
 //method to save data into localstorage
 function save() {
+
+    let fName = document.getElementById('fullName').value
+    let mail = document.getElementById('email').value
+    let contactNum = document.getElementById('contact').value
+    if(fName=="" || mail=="" ||contactNum==""){
+        alert("fill all details")
+        return;
+    }
+ 
     //get data from localstorage and store to contaclist array
     //we must to use JSON.parse, because data as string, we need convert to array
     contactList = JSON.parse(localStorage.getItem('listItem')) ?? []
