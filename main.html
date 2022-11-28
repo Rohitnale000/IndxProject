@@ -7,6 +7,7 @@
 <title>Main</title>
 <link rel="stylesheet" href="css/main.css">
 
+
 <body>
     <nav class="navbar"></nav>
     <script src="javascript/nav.js"></script>
@@ -19,26 +20,31 @@
         <p>
         <p>As like your phone have contact list here you can also add some additional information</p>
     </div>
-    <div class="contact-table">
+    <br><br>
+    <div class="contact-table" >
         <table class="list" id="contactList">
+            <div class="column">
             <thead>
                 <tr>
+                    <th>No</th>
                     <th>Full Name</th>
                     <th>Email Id</th>
                     <th>contact</th>
-                    <th>Actions</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table">
 
             </tbody>
         </table>
     </div>
-    <br><br>
+</div>
     <div class="container">
-        <hr>
-        <div class="container">
-            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <div class="column">
+        <div class="fill">
+            <form id="form">
+                <input type="hidden" name="id" id="id">
                 <div>
                     <h2 style="text-align:center ;">Fill Details</h2>
                     <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This
@@ -53,15 +59,28 @@
                     <label>contact</label>
                     <input type="text" name="contact" id="contact">
                 </div>
-                <div class="form-action-buttons">
-                    <input type="submit" value="submit">
-                </div>
+                
+                <button  type="button" onclick="save()">Save</button>
+                <button  type="button" onclick="clearData()">Reset</button>
             </form>
         </div>
+    </div>
         <br />
 
-        <script src="javascript/script.js"></script>
-
+        <!-- <script src="javascript/script.js"></script> -->
+        <script src="javascript/retrive.js"></script>
+        <script src="javascript/save.js"></script>
+        <script src="javascript/find.js"></script>
+        <script src="javascript/remove.js"></script>
+        <script>
+            allData()
+        </script>
+        <script>
+            function clearData() {
+                document.getElementById('form').reset()
+                document.getElementById('id').value = ""
+            }
+        </script>
     </div>
 </body>
 

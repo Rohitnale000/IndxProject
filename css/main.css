@@ -32,29 +32,42 @@ body {
     text-align: center;
     padding-left: 16px;
 }
+.column {
+  
+  width: 50%;
+  padding: 5px;
+}
 
-.container {
-    border-style: solid;
+/* .container {
+
     margin-bottom: 10px;
     margin-left: 10px;
     padding: 10px;
-     width: 50%;
+    width: 0%;
     margin: auto;
     width: 50%;
-    border: 3px solid green; 
+    border: 1px solid rgb(30, 27, 31);
     padding: 10px;
+} */
+
+.fill {
+    float: left;
+    border-style: solid;
+    background-color: #9a8d92;
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+
 }
 
 .contact-table {
+    float: right;
     border-style: solid;
-     margin-bottom: 10px;
-    /* margin-left: 10px; */
+    background-color: #9a8d92;
     padding: 20px;
-    /* width: 50%; */
     margin: auto;
-    width: 69%;
-    /* border: 3px solid green; */
-    /* padding: 10px; */
+    width: 60%;
+
 }
 
 body>table {
@@ -71,14 +84,14 @@ table.list {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid#d2b2b2;
     text-align: left;
     padding: 8px;
 }
 
-tr:nth-child(even),
+tr:nth-child(),
 table.list thead>tr {
-    background-color: #dddddd;
+    background-color: azure;
 }
 
 input[type=text],
@@ -92,7 +105,7 @@ input[type=number] {
     box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type=save] {
     width: 30%;
     background-color: black;
     color: white;
