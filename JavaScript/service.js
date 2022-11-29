@@ -82,7 +82,8 @@ function loginFun() {
   }
 
   if (iCnt > 0) {
-    alert("Login Successfully...");
+     alert("Login Successfully...");
+    location.href='./main.html' ;
   } else {
     alert("Invalid Username or Password");
   }
