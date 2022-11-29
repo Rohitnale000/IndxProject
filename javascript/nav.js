@@ -10,5 +10,4 @@ const createNav = () => {
 </nav>
     `;
 }
-
 createNav();
