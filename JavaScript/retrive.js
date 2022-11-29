@@ -3,7 +3,6 @@ function allData() {
 
     table.innerHTML = ``
     //get data from localstorage and store to contaclist array
-    //we must to use JSON.parse, because data as string, we need convert to array
     contactList = JSON.parse(localStorage.getItem('listItem')) ?? []
     //looping data and show data in table
     contactList.forEach(function (value, i) {
