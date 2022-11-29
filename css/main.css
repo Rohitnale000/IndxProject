@@ -51,6 +51,7 @@ body {
     padding: 10px;
 } */
 
+
 .fill {
     float: left;
     border-style: solid;
@@ -58,6 +59,7 @@ body {
     padding: 20px;
     margin: auto;
     width: 60%;
+    height: auto;
 
 }
 
@@ -68,6 +70,7 @@ body {
     padding: 20px;
     margin: auto;
     width: 60%;
+    height: auto;
 
 }
 
